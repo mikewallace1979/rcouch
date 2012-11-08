@@ -18,29 +18,29 @@
         <h1>Rcouch</h1>
         <p>Alternative Apache CouchDB distribution</p>
 
-        <p class="view"><a href="https://github.com/refuge/rcouch">View the Project on GitHub <small>refuge/rcouch</small></a></p>
-
-
         <ul>
           <li><a href="https://github.com/refuge/rcouch/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/refuge/rcouch/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/refuge/rcouch">View On <strong>GitHub</strong></a></li>
         </ul>
+        <h2><a href="#install">Install Rcouch</a></h2>
+        <h2><a href="https://github.com/refuge/rcouch/wiki">Wiki</a></h2>
+        <h2><a href="https://groups.google.com/d/forum/rcouch">Discussion Group</a></h2>
+        <h2><a href="https://github.com/refuge/rcouch">Source & Bugs</a></h2>
+        <h2><a href="https://twitter.com/refugeio">Twitter</a></h2>
+
       </header>
       <section>
         <h2>rcouch <a href="http://travis-ci.org/refuge/rcouch"><img src="https://secure.travis-ci.org/refuge/rcouch.png" alt="Build Status"></a>
 </h2>
 
-<p>rcouch is a static distribution of couchdb using rebar. It is an
-extraction of the refuge code to ease the distribution of couchdb.</p>
+<p>rcouch is a custom distribution of <a
+  href="http://couchdb.apache.org">couchdb</a> statically linked ausing
+rebar. </p>
 
 <p>Based on the couchdb code it is tagged from time to time for stability
 purpose. At some point some supported branch may appear.</p>
 
-<p>RCouch differs from refuge by only focusing on Apache CouchDB. It won't
-contain any of the refuge features like P2P nodes handling, ... .
-Internally we are using it to test couchdb and as an example on how to
-embed couchdb in your own applications.</p>
 
 <p>RCouch is brought you by the <a href="http://refuge.io">Refuge project</a>.</p>
 
@@ -49,6 +49,11 @@ embed couchdb in your own applications.</p>
 <ul>
 <li>Apache CouchDB based</li>
 <li>Geocouch integrated</li>
+<li>Random doc api</li>
+<li>View changes and replication from a vies</li>
+<li>Dropbox Databases</li>
+<li>Db Changes</li>
+<li>Validate on read</li>
 <li>rebar</li>
 <li>relocatable</li>
 <li>Fully opensource. All the sources are on refuge GIT repository
@@ -63,7 +68,9 @@ embed couchdb in your own applications.</p>
 <li>ICU (if not built statically)</li>
 <li>Latest version of <a href="http://github.com/basho/rebar">rebar</a> installed on
 your system.</li>
-</ul><h2>Installation</h2>
+</ul>
+
+<h2 id="install">Installation</h2>
 
 <p>Installation is pretty simple. Just run the command line:</p>
 
@@ -76,7 +83,7 @@ fully relocatable, so you can put it where you want on your system.</p>
 <p>To create package for your system run <code>make package</code> . For now we build
 packages for OSX, Debian, Redhat &amp; Solaris.</p>
 
-<h2>Build rcouchx</h2>
+<h2 id="build">Build rcouchx</h2>
 
 <p>rcouchx is a macosx interface for rcouch based on <a href="https://github.com/janl/couchdbx-app">the excellent
 work</a> of Jan:</p>
