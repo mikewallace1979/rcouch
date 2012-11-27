@@ -1,166 +1,202 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Rcouch by refuge</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Apache CouchDB Documentation &mdash; The Apache CouchDB Documentation</title>
+    
+    <link rel="stylesheet" href="static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="top" title="The Apache CouchDB Documentation" href="#" />
+    <link rel="next" title="Introduction" href="intro.html" /> 
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Rcouch</h1>
-        <p>Alternative Apache CouchDB distribution</p>
+      <div class="header"><h1 class="heading"><a href="#">
+          <span>The Apache CouchDB Documentation</span></a></h1>
+        <h2 class="heading"><span>Apache CouchDB Documentation</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="intro.html">Introduction</a>&#160;&#160;»
+        </p>
 
-        <ul>
-          <li><a href="https://github.com/refuge/rcouch/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/refuge/rcouch/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/refuge/rcouch">View On <strong>GitHub</strong></a></li>
-        </ul>
-        <h2><a href="#install">Install Rcouch</a></h2>
-        <h2><a href="https://github.com/refuge/rcouch/wiki">Wiki</a></h2>
-        <h2><a href="https://groups.google.com/d/forum/rcouch">Discussion Group</a></h2>
-        <h2><a href="https://github.com/refuge/rcouch">Source & Bugs</a></h2>
-        <h2><a href="https://twitter.com/refugeio">Twitter</a></h2>
-      </header>
-      <section>
-        <h2>rcouch <a href="http://travis-ci.org/refuge/rcouch"><img src="https://secure.travis-ci.org/refuge/rcouch.png" alt="Build Status"></a>
-</h2>
-
-<p>rcouch is a custom distribution of <a
-  href="http://couchdb.apache.org">couchdb</a> statically linked ausing
-rebar. </p>
-
-<p>Based on the couchdb code it is tagged from time to time for stability
-purpose. At some point some supported branch may appear.</p>
-
-
-<p>RCouch is brought you by the <a href="http://refuge.io">Refuge project</a>.</p>
-
-<h2>Features:</h2>
-
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="apache-couchdb-documentation">
+<h1>Apache CouchDB Documentation<a class="headerlink" href="#apache-couchdb-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
 <ul>
-<li>Apache CouchDB based</li>
-<li>Geocouch integrated</li>
-<li>Random doc api</li>
-<li>View changes and replication from views</li>
-<li>Dropbox Databases</li>
-<li>Db Changes</li>
-<li>Validate on read</li>
-<li>rebar</li>
-<li>relocatable</li>
-<li>Fully opensource. All the sources are on refuge GIT repository
-(<a href="http://github.com/refuge">http://github.com/refuge</a>) under Apache License 2.</li>
-</ul><h2>Requirements</h2>
-
-<ul>
-<li>OS supported: Linux, OSX, BSDs (windows support is coming)</li>
-<li>Erlang R15</li>
-<li>Curl</li>
-<li>zip (during build)</li>
-<li>ICU (if not built statically)</li>
-<li>Latest version of <a href="http://github.com/basho/rebar">rebar</a> installed on
-your system.</li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#using-futon">Using Futon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="intro.html#using-curl">Using <tt class="docutils literal"><span class="pre">curl</span></tt></a></li>
 </ul>
-
-<h2 id="install">Installation</h2>
-
-<p>Installation is pretty simple. Just run the command line:</p>
-
-<pre><code>$ make rel
-</code></pre>
-
-<p>and it will generate a couch folder in rel/couch. This release is
-fully relocatable, so you can put it where you want on your system.</p>
-
-<p>To create package for your system run <code>make package</code> . For now we build
-packages for OSX, Debian, Redhat &amp; Solaris.</p>
-
-<h2 id="build">Build rcouchx</h2>
-
-<p>rcouchx is a macosx interface for rcouch based on <a href="https://github.com/janl/couchdbx-app">the excellent
-work</a> of Jan:</p>
-
-<p><img src="images/screenshot_rcouchx.png" alt="screenshot of rcouchx"></p>
-
-<p>To build it, run the command line:</p>
-
-<pre><code>$ make rcouchx
-</code></pre>
-
-<p>Then launch the <code>rcouchx.app</code> application.</p>
-
-<h2>Notes on building a truly distributable package</h2>
-
-<p>The package built above will still depend on some libraries from your
-system, so additional work has to be done to distribute it to
-older/newer systems.</p>
-
-<ol>
-<li>
-<p>CouchDB will depend on the ICU library version that was present in
-your system at build time. To easily bundle this library with the
-package, build with:</p>
-
-<pre><code> $ make rel USE_STATIC_ICU=1
-</code></pre>
 </li>
-<li>
-<p>Check whether your package depends on Ncurses:</p>
-
-<pre><code> $ ldd ./rel/rcouch/erts-*/bin/erlexec|grep ncurses
-</code></pre>
-
-<p>If it does, copy the .so file to ./rel/myapp/lib/ or rebuild Erlang
-without this dependency.</p>
+<li class="toctree-l1"><a class="reference internal" href="api-basics.html">CouchDB API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api-basics.html#request-format-and-responses">Request Format and Responses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-basics.html#http-headers">HTTP Headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-basics.html#json-basics">JSON Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-basics.html#http-status-codes">HTTP Status Codes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api-basics.html#couchdb-api-overview">CouchDB API Overview</a></li>
+</ul>
 </li>
-<li>
-<p>Decide whether you need SSL support in your package and check whether it
-depends on OpenSSL:</p>
-
-<pre><code> $ ldd ./rel/rcouch/lib/ssl-*/priv/bin/ssl_esock|grep 'libcrypto\|libssl'
-</code></pre>
-
-<p>If it does, copy the .so file to ./rel/rcouch/lib/ or rebuild Erlang
-without this dependency.</p>
+<li class="toctree-l1"><a class="reference internal" href="range.html">HTTP Range Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuring.html">Configuring CouchDB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#couchdb-configuration-files">CouchDB Configuration Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#configuration-file-locations">Configuration File Locations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#update-notifications">Update Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#mochiweb-server-options">MochiWeb Server Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#socket-options-configuration-setting">Socket Options Configuration Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="configuring.html#vhosts-definitions"><tt class="docutils literal"><span class="pre">vhosts</span></tt> definitions</a></li>
+</ul>
 </li>
-</ol><p>If you copied any .so files in the last 2 steps, run this command, so
-that your app can find the libraries:</p>
+<li class="toctree-l1"><a class="reference internal" href="ssl.html">Native SSL Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="os-daemons.html">OS Daemons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http-proxying.html">HTTP Proxying</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config_reference.html">Configuration options reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#configuration-groups">Configuration Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#attachments-configuration-options">attachments Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#couchdb-configuration-options">couchdb Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#daemons-configuration-options">daemons Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#httpd-db-handlers-configuration-options">httpd_db_handlers Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#couch-httpd-auth-configuration-options">couch_httpd_auth Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#httpd-configuration-options">httpd Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#httpd-design-handlers-configuration-options">httpd_design_handlers Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#httpd-global-handlers-configuration-options">httpd_global_handlers Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#log-configuration-options">log Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#query-servers-configuration-options">query_servers Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#query-server-config-configuration-options">query_server_config Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#replicator-configuration-options">replicator Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#stats-configuration-options">stats Configuration Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config_reference.html#uuids-configuration-options">uuids Configuration Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="replication.html">Replicator Database</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="replication.html#basics">Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="replication.html#documents-describing-the-same-replication">Documents describing the same replication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="replication.html#canceling-replications">Canceling replications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="replication.html#server-restart">Server restart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="replication.html#changing-the-replicator-database">Changing the Replicator Database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="replication.html#replicating-the-replicator-database">Replicating the replicator database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="replication.html#delegations">Delegations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ddocs.html">Design Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ddocs.html#view-functions">View functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ddocs.html#show-functions">Show functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ddocs.html#list-functions">List functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ddocs.html#update-functions">Update functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ddocs.html#filter-functions">Filter functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ddocs.html#validate-document-update-functions">Validate document update functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="query-servers.html">Query servers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="query-servers.html#javascript">JavaScript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="query-servers.html#erlang">Erlang</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commonjs.html">CommonJS support for map functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="errors.html">Error Messages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changes Feed</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#polling">Polling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#long-polling">Long Polling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changes.html#continuous">Continuous</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">CouchDB Release 1.0.0 Feature Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="release.html#upgrading-to-couchdb-version">Upgrading to CouchDB 1.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release.html#new-features-in-couchdb-version">New features in CouchDB 1.0.0</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/reference.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/configuration.html">Configuration Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/authn.html">Authentication Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/database.html">Database Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/documents.html">Document Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/design.html">Design Document Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/misc.html">Miscellaneous Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/local.html">Local (non-replicating) Document Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/dbmaint.html">Database Maintenance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="json-structure.html">JSON Structure Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#all-database-documents">All Database Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#bulk-document-response">Bulk Document Response</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#bulk-documents">Bulk Documents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#changes-information-for-a-database">Changes information for a database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#couchdb-document">CouchDB Document</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#couchdb-error-status">CouchDB Error Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#couchdb-database-information-object">CouchDB database information object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#design-document">Design Document</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#design-document-information">Design Document Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#design-document-spatial-index-information">Design Document spatial index Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#document-with-attachments">Document with Attachments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#list-of-active-tasks">List of Active Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#replication-settings">Replication Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#replication-status">Replication Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#request-object">Request object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#response-object">Response object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#returned-couchdb-document-with-detailed-revision-info">Returned CouchDB Document with Detailed Revision Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#returned-couchdb-document-with-revision-info">Returned CouchDB Document with Revision Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#returned-document-with-attachments">Returned Document with Attachments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#security-object">Security Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#user-context-object">User Context Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="json-structure.html#view-head-information">View Head Information</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+<li><a class="reference internal" href="py-modindex.html"><em>Module Index</em></a></li>
+<li><a class="reference internal" href="search.html"><em>Search Page</em></a></li>
+</ul>
+</div>
 
-<pre><code>$ sed -i '/^RUNNER_USER=/a\\nexport LD_LIBRARY_PATH="$RUNNER_BASE_DIR/lib"' ./rel/rcouch/bin/rcouch
-</code></pre>
 
-<h2>Binding port 80</h2>
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="intro.html">Introduction</a>&#160;&#160;»
+        </p>
 
-<p>On most UNIX systems binding port 80 is a privileged operation (requires
-root). Running Erlang as root is not recommended so some configuration
-will need to be done so that rcouch can bind port 80.</p>
+      </div>
 
-<p>If you run a recent Linux kernel with capabilities you can give Erlang
-the privilege using the setcap command (you may need to install a
-package named lxc or similar to obtain this command).</p>
-
-<pre><code>$ setcap 'cap_net_bind_service=+ep' /path/to/rel/refuge/erts-5.8.5/bin/beam`
-$ setcap 'cap_net_bind_service=+ep' /path/to/rel/refuge/erts-5.8.5/bin/beam.smp
-</code></pre>
-
-<p>On FreeBSD all ports can be made accessible to all users by issuing:</p>
-
-<p>$ sysctl net.inet.ip.portrange.reservedhigh=0</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/refuge">refuge</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+    <div class="footer">
+        &copy; Copyright 2012, The Apache Foundation.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-
   </body>
 </html>

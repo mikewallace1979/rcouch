@@ -153,8 +153,9 @@ prevent undetected dead connections.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Reference a filter function from a design document to selectively get
-updates. See the <a class="reference external" href="http://books.couchdb.org/relax/reference/change-notifications">section in the book</a> for more information.</p>
+<li><p class="first">Reference to a <a class="reference internal" href="ddocs.html#filterfun"><em>filter function</em></a> from a design document
+that will filter whole stream emitting only filtered events.
+See the <a class="reference external" href="http://books.couchdb.org/relax/reference/change-notifications">section in the book</a> for more information.</p>
 </li>
 <li><p class="first">Include the associated document with each result. If there are conflicts,
 only the winning revision is returned.</p>
@@ -244,13 +245,7 @@ results.</p>
 </div>
 <p>Obviously, <cite>... tum tee tum ...</cite> does not appear in the actual response, but
 represents a long pause before the change with seq 6 occurred.</p>
-</div>
-<div class="section" id="filters">
-<h2>Filters<a class="headerlink" href="#filters" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="classic-filters">
-<h3>Classic filters<a class="headerlink" href="#classic-filters" title="Permalink to this headline">¶</a></h3>
-<p>By default changes feed emits all database documents changes. But if you&#8217;re
-waiting for some special changes it&#8217;s not optimal to process each record.</p>
+<p>cial changes it&#8217;s not optimal to process each record.</p>
 <p>Filters are special design document functions that allows changes feed to emit
 only specific documents that passed filter rules.</p>
 <p>Let assume that our database is mailbox and we need to listen changes to handle
@@ -330,7 +325,6 @@ only required documents:</p>
 </div>
 <p>Combining filters with <cite>continuous</cite> feed allows to create powerful event-driven
 systems.</p>
-</div>
 <div class="section" id="view-filters">
 <h3>View filters<a class="headerlink" href="#view-filters" title="Permalink to this headline">¶</a></h3>
 <p>View filters are the same as classic one with one small difference: they used
